@@ -15,9 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css">
-    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/charts/apexcharts.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css"> 
     <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/toastr.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/extensions/plyr.min.css">
     <!-- END: Vendor CSS-->
 
     <!-- BEGIN: Theme CSS-->
@@ -34,6 +34,7 @@
     <link rel="stylesheet" type="text/css" href="app-assets/css/pages/dashboard-ecommerce.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/charts/chart-apex.css">
     <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/extensions/ext-component-toastr.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/plugins/extensions/ext-component-media-player.css">
     <!-- END: Page CSS-->
 
     <!-- BEGIN: Custom CSS-->
@@ -45,7 +46,7 @@
 
 <!-- BEGIN: Body-->
 
-<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static   menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="">
+<body class="vertical-layout vertical-menu-modern navbar-floating footer-static menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="">
 
     <!-- BEGIN: Header-->
     <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow">
@@ -70,7 +71,7 @@
                     </li>
                 </ul>
             </div>
-            <ul class="nav navbar-nav align-items-center ml-auto">
+            <ul class="ml-auto nav navbar-nav align-items-center">
                 <li class="nav-item dropdown dropdown-language"><a class="nav-link dropdown-toggle" id="dropdown-flag" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flag-icon flag-icon-us"></i><span class="selected-language">English</span></a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-flag"><a class="dropdown-item" href="javascript:void(0);" data-language="en"><i class="flag-icon flag-icon-us"></i> English</a><a class="dropdown-item" href="javascript:void(0);" data-language="fr"><i class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="javascript:void(0);" data-language="de"><i class="flag-icon flag-icon-de"></i> German</a><a class="dropdown-item" href="javascript:void(0);" data-language="pt"><i class="flag-icon flag-icon-pt"></i> Portuguese</a></div>
                 </li>
@@ -87,12 +88,12 @@
                     <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
                         <li class="dropdown-menu-header">
                             <div class="dropdown-header d-flex">
-                                <h4 class="notification-title mb-0 mr-auto">My Cart</h4>
+                                <h4 class="mb-0 mr-auto notification-title">My Cart</h4>
                                 <div class="badge badge-pill badge-light-primary">4 Items</div>
                             </div>
                         </li>
                         <li class="scrollable-container media-list">
-                            <div class="media align-items-center"><img class="d-block rounded mr-1" src="app-assets/images/pages/eCommerce/1.png" alt="donuts" width="62">
+                            <div class="media align-items-center"><img class="mr-1 rounded d-block" src="app-assets/images/pages/eCommerce/1.png" alt="donuts" width="62">
                                 <div class="media-body"><i class="ficon cart-item-remove" data-feather="x"></i>
                                     <div class="media-heading">
                                         <h6 class="cart-item-title"><a class="text-body" href="app-ecommerce-details.html"> Apple watch 5</a></h6><small class="cart-item-by">By Apple</small>
@@ -105,7 +106,7 @@
                                     <h5 class="cart-item-price">$374.90</h5>
                                 </div>
                             </div>
-                            <div class="media align-items-center"><img class="d-block rounded mr-1" src="app-assets/images/pages/eCommerce/7.png" alt="donuts" width="62">
+                            <div class="media align-items-center"><img class="mr-1 rounded d-block" src="app-assets/images/pages/eCommerce/7.png" alt="donuts" width="62">
                                 <div class="media-body"><i class="ficon cart-item-remove" data-feather="x"></i>
                                     <div class="media-heading">
                                         <h6 class="cart-item-title"><a class="text-body" href="app-ecommerce-details.html"> Google Home Mini</a></h6><small class="cart-item-by">By Google</small>
@@ -118,7 +119,7 @@
                                     <h5 class="cart-item-price">$129.40</h5>
                                 </div>
                             </div>
-                            <div class="media align-items-center"><img class="d-block rounded mr-1" src="app-assets/images/pages/eCommerce/2.png" alt="donuts" width="62">
+                            <div class="media align-items-center"><img class="mr-1 rounded d-block" src="app-assets/images/pages/eCommerce/2.png" alt="donuts" width="62">
                                 <div class="media-body"><i class="ficon cart-item-remove" data-feather="x"></i>
                                     <div class="media-heading">
                                         <h6 class="cart-item-title"><a class="text-body" href="app-ecommerce-details.html"> iPhone 11 Pro</a></h6><small class="cart-item-by">By Apple</small>
@@ -131,7 +132,7 @@
                                     <h5 class="cart-item-price">$699.00</h5>
                                 </div>
                             </div>
-                            <div class="media align-items-center"><img class="d-block rounded mr-1" src="app-assets/images/pages/eCommerce/3.png" alt="donuts" width="62">
+                            <div class="media align-items-center"><img class="mr-1 rounded d-block" src="app-assets/images/pages/eCommerce/3.png" alt="donuts" width="62">
                                 <div class="media-body"><i class="ficon cart-item-remove" data-feather="x"></i>
                                     <div class="media-heading">
                                         <h6 class="cart-item-title"><a class="text-body" href="app-ecommerce-details.html"> iMac Pro</a></h6><small class="cart-item-by">By Apple</small>
@@ -144,7 +145,7 @@
                                     <h5 class="cart-item-price">$4,999.00</h5>
                                 </div>
                             </div>
-                            <div class="media align-items-center"><img class="d-block rounded mr-1" src="app-assets/images/pages/eCommerce/5.png" alt="donuts" width="62">
+                            <div class="media align-items-center"><img class="mr-1 rounded d-block" src="app-assets/images/pages/eCommerce/5.png" alt="donuts" width="62">
                                 <div class="media-body"><i class="ficon cart-item-remove" data-feather="x"></i>
                                     <div class="media-heading">
                                         <h6 class="cart-item-title"><a class="text-body" href="app-ecommerce-details.html"> MacBook Pro</a></h6><small class="cart-item-by">By Apple</small>
@@ -159,9 +160,9 @@
                             </div>
                         </li>
                         <li class="dropdown-menu-footer">
-                            <div class="d-flex justify-content-between mb-1">
-                                <h6 class="font-weight-bolder mb-0">Total:</h6>
-                                <h6 class="text-primary font-weight-bolder mb-0">$10,999.00</h6>
+                            <div class="mb-1 d-flex justify-content-between">
+                                <h6 class="mb-0 font-weight-bolder">Total:</h6>
+                                <h6 class="mb-0 text-primary font-weight-bolder">$10,999.00</h6>
                             </div><a class="btn btn-primary btn-block" href="app-ecommerce-checkout.html">Checkout</a>
                         </li>
                     </ul>
@@ -170,7 +171,7 @@
                     <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
                         <li class="dropdown-menu-header">
                             <div class="dropdown-header d-flex">
-                                <h4 class="notification-title mb-0 mr-auto">Notifications</h4>
+                                <h4 class="mb-0 mr-auto notification-title">Notifications</h4>
                                 <div class="badge badge-pill badge-light-primary">6 New</div>
                             </div>
                         </li>
@@ -205,7 +206,7 @@
                                 </div>
                             </a>
                             <div class="media d-flex align-items-center">
-                                <h6 class="font-weight-bolder mr-auto mb-0">System Notifications</h6>
+                                <h6 class="mb-0 mr-auto font-weight-bolder">System Notifications</h6>
                                 <div class="custom-control custom-control-primary custom-switch">
                                     <input class="custom-control-input" id="systemNotification" type="checkbox" checked="">
                                     <label class="custom-control-label" for="systemNotification"></label>
@@ -260,13 +261,13 @@
     </nav>
     <ul class="main-search-list-defaultlist d-none">
         <li class="d-flex align-items-center"><a href="javascript:void(0);">
-                <h6 class="section-label mt-75 mb-0">Files</h6>
+                <h6 class="mb-0 section-label mt-75">Files</h6>
             </a></li>
         <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
                 <div class="d-flex">
                     <div class="mr-75"><img src="app-assets/images/icons/xls.png" alt="png" height="32"></div>
                     <div class="search-data">
-                        <p class="search-data-title mb-0">Two new item submitted</p><small class="text-muted">Marketing Manager</small>
+                        <p class="mb-0 search-data-title">Two new item submitted</p><small class="text-muted">Marketing Manager</small>
                     </div>
                 </div><small class="search-data-size mr-50 text-muted">&apos;17kb</small>
             </a></li>
@@ -274,7 +275,7 @@
                 <div class="d-flex">
                     <div class="mr-75"><img src="app-assets/images/icons/jpg.png" alt="png" height="32"></div>
                     <div class="search-data">
-                        <p class="search-data-title mb-0">52 JPG file Generated</p><small class="text-muted">FontEnd Developer</small>
+                        <p class="mb-0 search-data-title">52 JPG file Generated</p><small class="text-muted">FontEnd Developer</small>
                     </div>
                 </div><small class="search-data-size mr-50 text-muted">&apos;11kb</small>
             </a></li>
@@ -282,7 +283,7 @@
                 <div class="d-flex">
                     <div class="mr-75"><img src="app-assets/images/icons/pdf.png" alt="png" height="32"></div>
                     <div class="search-data">
-                        <p class="search-data-title mb-0">25 PDF File Uploaded</p><small class="text-muted">Digital Marketing Manager</small>
+                        <p class="mb-0 search-data-title">25 PDF File Uploaded</p><small class="text-muted">Digital Marketing Manager</small>
                     </div>
                 </div><small class="search-data-size mr-50 text-muted">&apos;150kb</small>
             </a></li>
@@ -290,18 +291,18 @@
                 <div class="d-flex">
                     <div class="mr-75"><img src="app-assets/images/icons/doc.png" alt="png" height="32"></div>
                     <div class="search-data">
-                        <p class="search-data-title mb-0">Anna_Strong.doc</p><small class="text-muted">Web Designer</small>
+                        <p class="mb-0 search-data-title">Anna_Strong.doc</p><small class="text-muted">Web Designer</small>
                     </div>
                 </div><small class="search-data-size mr-50 text-muted">&apos;256kb</small>
             </a></li>
         <li class="d-flex align-items-center"><a href="javascript:void(0);">
-                <h6 class="section-label mt-75 mb-0">Members</h6>
+                <h6 class="mb-0 section-label mt-75">Members</h6>
             </a></li>
         <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
                 <div class="d-flex align-items-center">
                     <div class="avatar mr-75"><img src="app-assets/images/portrait/small/avatar-s-8.jpg" alt="png" height="32"></div>
                     <div class="search-data">
-                        <p class="search-data-title mb-0">John Doe</p><small class="text-muted">UI designer</small>
+                        <p class="mb-0 search-data-title">John Doe</p><small class="text-muted">UI designer</small>
                     </div>
                 </div>
             </a></li>
@@ -309,7 +310,7 @@
                 <div class="d-flex align-items-center">
                     <div class="avatar mr-75"><img src="app-assets/images/portrait/small/avatar-s-1.jpg" alt="png" height="32"></div>
                     <div class="search-data">
-                        <p class="search-data-title mb-0">Michal Clark</p><small class="text-muted">FontEnd Developer</small>
+                        <p class="mb-0 search-data-title">Michal Clark</p><small class="text-muted">FontEnd Developer</small>
                     </div>
                 </div>
             </a></li>
@@ -317,7 +318,7 @@
                 <div class="d-flex align-items-center">
                     <div class="avatar mr-75"><img src="app-assets/images/portrait/small/avatar-s-14.jpg" alt="png" height="32"></div>
                     <div class="search-data">
-                        <p class="search-data-title mb-0">Milena Gibson</p><small class="text-muted">Digital Marketing Manager</small>
+                        <p class="mb-0 search-data-title">Milena Gibson</p><small class="text-muted">Digital Marketing Manager</small>
                     </div>
                 </div>
             </a></li>
@@ -325,7 +326,7 @@
                 <div class="d-flex align-items-center">
                     <div class="avatar mr-75"><img src="app-assets/images/portrait/small/avatar-s-6.jpg" alt="png" height="32"></div>
                     <div class="search-data">
-                        <p class="search-data-title mb-0">Anna Strong</p><small class="text-muted">Web Designer</small>
+                        <p class="mb-0 search-data-title">Anna Strong</p><small class="text-muted">Web Designer</small>
                     </div>
                 </div>
             </a></li>
@@ -341,8 +342,8 @@
     <!-- BEGIN: Main Menu-->
     <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
         <div class="navbar-header">
-            <ul class="nav navbar-nav flex-row">
-                <li class="nav-item mr-auto"><a class="navbar-brand" href="../../../html/ltr/vertical-collapsed-menu-template/index.html"><span class="brand-logo">
+            <ul class="flex-row nav navbar-nav">
+                <li class="mr-auto nav-item"><a class="navbar-brand" href="../../../html/ltr/vertical-collapsed-menu-template/index.html"><span class="brand-logo">
                             <svg viewbox="0 0 139 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="24">
                                 <defs>
                                     <lineargradient id="linearGradient-1" x1="100%" y1="10.5120544%" x2="50%" y2="89.4879456%">
@@ -368,13 +369,13 @@
                             </svg></span>
                         <h2 class="brand-text">Vuexy</h2>
                     </a></li>
-                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
+                <li class="nav-item nav-toggle"><a class="pr-0 nav-link modern-nav-toggle" data-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4 text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
             </ul>
         </div>
         <div class="shadow-bottom"></div>
         <div class="main-menu-content">
             <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-                <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboards</span><span class="badge badge-light-warning badge-pill ml-auto mr-1">2</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboards</span><span class="ml-auto mr-1 badge badge-light-warning badge-pill">2</span></a>
                     <ul class="menu-content">
                         <li><a class="d-flex align-items-center" href="dashboard-analytics.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Analytics">Analytics</span></a>
                         </li>
@@ -510,7 +511,7 @@
                 </li>
                 <li class=" nav-item"><a class="d-flex align-items-center" href="ui-feather.html"><i data-feather="eye"></i><span class="menu-title text-truncate" data-i18n="Feather">Feather</span></a>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="credit-card"></i><span class="menu-title text-truncate" data-i18n="Card">Card</span><span class="badge badge-light-success badge-pill ml-auto mr-1">New</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="credit-card"></i><span class="menu-title text-truncate" data-i18n="Card">Card</span><span class="ml-auto mr-1 badge badge-light-success badge-pill">New</span></a>
                     <ul class="menu-content">
                         <li><a class="d-flex align-items-center" href="card-basic.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Basic">Basic</span></a>
                         </li>
@@ -670,7 +671,7 @@
                 </li>
                 <li class=" navigation-header"><span data-i18n="Charts &amp; Maps">Charts &amp; Maps</span><i data-feather="more-horizontal"></i>
                 </li>
-                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="pie-chart"></i><span class="menu-title text-truncate" data-i18n="Charts">Charts</span><span class="badge badge-light-danger badge-pill ml-auto mr-2">2</span></a>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="pie-chart"></i><span class="menu-title text-truncate" data-i18n="Charts">Charts</span><span class="ml-auto mr-2 badge badge-light-danger badge-pill">2</span></a>
                     <ul class="menu-content">
                         <li><a class="d-flex align-items-center" href="chart-apex.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Apex">Apex</span></a>
                         </li>
@@ -724,7 +725,7 @@
                                 <div class="card-body">
                                     <h5>Congratulations 🎉 John!</h5>
                                     <p class="card-text font-small-3">You have won gold medal</p>
-                                    <h3 class="mb-75 mt-2 pt-50">
+                                    <h3 class="mt-2 mb-75 pt-50">
                                         <a href="javascript:void(0);">$48.9k</a>
                                     </h3>
                                     <button type="button" class="btn btn-primary">View Sales</button>
@@ -740,60 +741,60 @@
                                 <div class="card-header">
                                     <h4 class="card-title">Statistics</h4>
                                     <div class="d-flex align-items-center">
-                                        <p class="card-text font-small-2 mr-25 mb-0">Updated 1 month ago</p>
+                                        <p class="mb-0 card-text font-small-2 mr-25">Updated 1 month ago</p>
                                     </div>
                                 </div>
                                 <div class="card-body statistics-body">
                                     <div class="row">
-                                        <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-xl-0">
+                                        <div class="mb-2 col-xl-3 col-sm-6 col-12 mb-xl-0">
                                             <div class="media">
-                                                <div class="avatar bg-light-primary mr-2">
+                                                <div class="mr-2 avatar bg-light-primary">
                                                     <div class="avatar-content">
                                                         <i data-feather="trending-up" class="avatar-icon"></i>
                                                     </div>
                                                 </div>
-                                                <div class="media-body my-auto">
-                                                    <h4 class="font-weight-bolder mb-0">230k</h4>
-                                                    <p class="card-text font-small-3 mb-0">Sales</p>
+                                                <div class="my-auto media-body">
+                                                    <h4 class="mb-0 font-weight-bolder">230k</h4>
+                                                    <p class="mb-0 card-text font-small-3">Sales</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-xl-0">
+                                        <div class="mb-2 col-xl-3 col-sm-6 col-12 mb-xl-0">
                                             <div class="media">
-                                                <div class="avatar bg-light-info mr-2">
+                                                <div class="mr-2 avatar bg-light-info">
                                                     <div class="avatar-content">
                                                         <i data-feather="user" class="avatar-icon"></i>
                                                     </div>
                                                 </div>
-                                                <div class="media-body my-auto">
-                                                    <h4 class="font-weight-bolder mb-0">8.549k</h4>
-                                                    <p class="card-text font-small-3 mb-0">Customers</p>
+                                                <div class="my-auto media-body">
+                                                    <h4 class="mb-0 font-weight-bolder">8.549k</h4>
+                                                    <p class="mb-0 card-text font-small-3">Customers</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-sm-0">
+                                        <div class="mb-2 col-xl-3 col-sm-6 col-12 mb-sm-0">
                                             <div class="media">
-                                                <div class="avatar bg-light-danger mr-2">
+                                                <div class="mr-2 avatar bg-light-danger">
                                                     <div class="avatar-content">
                                                         <i data-feather="box" class="avatar-icon"></i>
                                                     </div>
                                                 </div>
-                                                <div class="media-body my-auto">
-                                                    <h4 class="font-weight-bolder mb-0">1.423k</h4>
-                                                    <p class="card-text font-small-3 mb-0">Products</p>
+                                                <div class="my-auto media-body">
+                                                    <h4 class="mb-0 font-weight-bolder">1.423k</h4>
+                                                    <p class="mb-0 card-text font-small-3">Products</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-xl-3 col-sm-6 col-12">
                                             <div class="media">
-                                                <div class="avatar bg-light-success mr-2">
+                                                <div class="mr-2 avatar bg-light-success">
                                                     <div class="avatar-content">
                                                         <i data-feather="dollar-sign" class="avatar-icon"></i>
                                                     </div>
                                                 </div>
-                                                <div class="media-body my-auto">
-                                                    <h4 class="font-weight-bolder mb-0">$9745</h4>
-                                                    <p class="card-text font-small-3 mb-0">Revenue</p>
+                                                <div class="my-auto media-body">
+                                                    <h4 class="mb-0 font-weight-bolder">$9745</h4>
+                                                    <p class="mb-0 card-text font-small-3">Revenue</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -804,107 +805,57 @@
                         <!--/ Statistics Card -->
                     </div>
 
-                    <div class="row match-height">
-                        <div class="col-lg-4 col-12">
-                            <div class="row match-height">
-                                <!-- Bar Chart - Orders -->
-                                <div class="col-lg-6 col-md-3 col-6">
-                                    <div class="card">
-                                        <div class="card-body pb-50">
-                                            <h6>Orders</h6>
-                                            <h2 class="font-weight-bolder mb-1">2,76k</h2>
-                                            <div id="statistics-order-chart"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/ Bar Chart - Orders -->
-
-                                <!-- Line Chart - Profit -->
-                                <div class="col-lg-6 col-md-3 col-6">
-                                    <div class="card card-tiny-line-stats">
-                                        <div class="card-body pb-50">
-                                            <h6>Profit</h6>
-                                            <h2 class="font-weight-bolder mb-1">6,24k</h2>
-                                            <div id="statistics-profit-chart"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/ Line Chart - Profit -->
-
-                                <!-- Earnings Card -->
-                                <div class="col-lg-12 col-md-6 col-12">
-                                    <div class="card earnings-card">
-                                        <div class="card-body">
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <h4 class="card-title mb-1">Earnings</h4>
-                                                    <div class="font-small-2">This Month</div>
-                                                    <h5 class="mb-1">$4055.56</h5>
-                                                    <p class="card-text text-muted font-small-2">
-                                                        <span class="font-weight-bolder">68.2%</span><span> more earnings than last month.</span>
-                                                    </p>
-                                                </div>
-                                                <div class="col-6">
-                                                    <div id="earnings-chart"></div>
-                                                </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner" role="listbox">
+                                            <div class="carousel-item active">
+                                                <img class="img-fluid" src="app-assets/images/slider/02.jpg" alt="First slide" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid" src="app-assets/images/slider/03.jpg" alt="Second slide" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid" src="app-assets/images/slider/01.jpg" alt="Third slide" />
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <!--/ Earnings Card -->
-                            </div>
-                        </div>
-
-                        <!-- Revenue Report Card -->
-                        <div class="col-lg-8 col-12">
-                            <div class="card card-revenue-budget">
-                                <div class="row mx-0">
-                                    <div class="col-md-8 col-12 revenue-report-wrapper">
-                                        <div class="d-sm-flex justify-content-between align-items-center mb-3">
-                                            <h4 class="card-title mb-50 mb-sm-0">Revenue Report</h4>
-                                            <div class="d-flex align-items-center">
-                                                <div class="d-flex align-items-center mr-2">
-                                                    <span class="bullet bullet-primary font-small-3 mr-50 cursor-pointer"></span>
-                                                    <span>Earning</span>
-                                                </div>
-                                                <div class="d-flex align-items-center ml-75">
-                                                    <span class="bullet bullet-warning font-small-3 mr-50 cursor-pointer"></span>
-                                                    <span>Expense</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="revenue-report-chart"></div>
-                                    </div>
-                                    <div class="col-md-4 col-12 budget-wrapper">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle budget-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                2020
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="javascript:void(0);">2020</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">2019</a>
-                                                <a class="dropdown-item" href="javascript:void(0);">2018</a>
-                                            </div>
-                                        </div>
-                                        <h2 class="mb-25">$25,852</h2>
-                                        <div class="d-flex justify-content-center">
-                                            <span class="font-weight-bolder mr-25">Budget:</span>
-                                            <span>56,800</span>
-                                        </div>
-                                        <div id="budget-chart"></div>
-                                        <button type="button" class="btn btn-primary">Increase Budget</button>
+                                        <a class="carousel-control-prev" href="#carousel-example-generic" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carousel-example-generic" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--/ Revenue Report Card -->
-                    </div>
+                         <!-- VIDEO -->
+                         <div class="col-md-6 col-sm-12">
+                            <div class="card">
+                                <div class="card-body"> 
+                                    <div class="video-player" id="plyr-video-player">
+                                        <iframe src="https://www.youtube.com/embed/bTqVqk7FSmY" allowfullscreen allow="autoplay"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ VIDEO -->
+                     </div>
 
                     <div class="row match-height">
                         <!-- Company Table Card -->
-                        <div class="col-lg-8 col-12">
+                        <div class="col-lg-12 col-12">
                             <div class="card card-company-table">
-                                <div class="card-body p-0">
+                                <div class="p-0 card-body">
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead>
@@ -920,7 +871,7 @@
                                                 <tr>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <div class="avatar rounded">
+                                                            <div class="rounded avatar">
                                                                 <div class="avatar-content">
                                                                     <img src="app-assets/images/icons/toolbox.svg" alt="Toolbar svg" />
                                                                 </div>
@@ -933,7 +884,7 @@
                                                     </td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <div class="avatar bg-light-primary mr-1">
+                                                            <div class="mr-1 avatar bg-light-primary">
                                                                 <div class="avatar-content">
                                                                     <i data-feather="monitor" class="font-medium-3"></i>
                                                                 </div>
@@ -950,7 +901,7 @@
                                                     <td>$891.2</td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <span class="font-weight-bolder mr-1">68%</span>
+                                                            <span class="mr-1 font-weight-bolder">68%</span>
                                                             <i data-feather="trending-down" class="text-danger font-medium-1"></i>
                                                         </div>
                                                     </td>
@@ -958,7 +909,7 @@
                                                 <tr>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <div class="avatar rounded">
+                                                            <div class="rounded avatar">
                                                                 <div class="avatar-content">
                                                                     <img src="app-assets/images/icons/parachute.svg" alt="Parachute svg" />
                                                                 </div>
@@ -971,7 +922,7 @@
                                                     </td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <div class="avatar bg-light-success mr-1">
+                                                            <div class="mr-1 avatar bg-light-success">
                                                                 <div class="avatar-content">
                                                                     <i data-feather="coffee" class="font-medium-3"></i>
                                                                 </div>
@@ -988,7 +939,7 @@
                                                     <td>$668.51</td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <span class="font-weight-bolder mr-1">97%</span>
+                                                            <span class="mr-1 font-weight-bolder">97%</span>
                                                             <i data-feather="trending-up" class="text-success font-medium-1"></i>
                                                         </div>
                                                     </td>
@@ -996,7 +947,7 @@
                                                 <tr>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <div class="avatar rounded">
+                                                            <div class="rounded avatar">
                                                                 <div class="avatar-content">
                                                                     <img src="app-assets/images/icons/brush.svg" alt="Brush svg" />
                                                                 </div>
@@ -1009,7 +960,7 @@
                                                     </td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <div class="avatar bg-light-warning mr-1">
+                                                            <div class="mr-1 avatar bg-light-warning">
                                                                 <div class="avatar-content">
                                                                     <i data-feather="watch" class="font-medium-3"></i>
                                                                 </div>
@@ -1026,7 +977,7 @@
                                                     <td>$522.29</td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <span class="font-weight-bolder mr-1">62%</span>
+                                                            <span class="mr-1 font-weight-bolder">62%</span>
                                                             <i data-feather="trending-up" class="text-success font-medium-1"></i>
                                                         </div>
                                                     </td>
@@ -1034,7 +985,7 @@
                                                 <tr>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <div class="avatar rounded">
+                                                            <div class="rounded avatar">
                                                                 <div class="avatar-content">
                                                                     <img src="app-assets/images/icons/star.svg" alt="Star svg" />
                                                                 </div>
@@ -1047,7 +998,7 @@
                                                     </td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <div class="avatar bg-light-primary mr-1">
+                                                            <div class="mr-1 avatar bg-light-primary">
                                                                 <div class="avatar-content">
                                                                     <i data-feather="monitor" class="font-medium-3"></i>
                                                                 </div>
@@ -1064,7 +1015,7 @@
                                                     <td>$291.01</td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <span class="font-weight-bolder mr-1">88%</span>
+                                                            <span class="mr-1 font-weight-bolder">88%</span>
                                                             <i data-feather="trending-up" class="text-success font-medium-1"></i>
                                                         </div>
                                                     </td>
@@ -1072,7 +1023,7 @@
                                                 <tr>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <div class="avatar rounded">
+                                                            <div class="rounded avatar">
                                                                 <div class="avatar-content">
                                                                     <img src="app-assets/images/icons/book.svg" alt="Book svg" />
                                                                 </div>
@@ -1085,7 +1036,7 @@
                                                     </td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <div class="avatar bg-light-success mr-1">
+                                                            <div class="mr-1 avatar bg-light-success">
                                                                 <div class="avatar-content">
                                                                     <i data-feather="coffee" class="font-medium-3"></i>
                                                                 </div>
@@ -1102,7 +1053,7 @@
                                                     <td>$783.93</td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <span class="font-weight-bolder mr-1">16%</span>
+                                                            <span class="mr-1 font-weight-bolder">16%</span>
                                                             <i data-feather="trending-down" class="text-danger font-medium-1"></i>
                                                         </div>
                                                     </td>
@@ -1110,7 +1061,7 @@
                                                 <tr>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <div class="avatar rounded">
+                                                            <div class="rounded avatar">
                                                                 <div class="avatar-content">
                                                                     <img src="app-assets/images/icons/rocket.svg" alt="Rocket svg" />
                                                                 </div>
@@ -1123,7 +1074,7 @@
                                                     </td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <div class="avatar bg-light-warning mr-1">
+                                                            <div class="mr-1 avatar bg-light-warning">
                                                                 <div class="avatar-content">
                                                                     <i data-feather="watch" class="font-medium-3"></i>
                                                                 </div>
@@ -1140,7 +1091,7 @@
                                                     <td>$780.05</td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <span class="font-weight-bolder mr-1">78%</span>
+                                                            <span class="mr-1 font-weight-bolder">78%</span>
                                                             <i data-feather="trending-up" class="text-success font-medium-1"></i>
                                                         </div>
                                                     </td>
@@ -1148,7 +1099,7 @@
                                                 <tr>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <div class="avatar rounded">
+                                                            <div class="rounded avatar">
                                                                 <div class="avatar-content">
                                                                     <img src="app-assets/images/icons/speaker.svg" alt="Speaker svg" />
                                                                 </div>
@@ -1161,7 +1112,7 @@
                                                     </td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <div class="avatar bg-light-warning mr-1">
+                                                            <div class="mr-1 avatar bg-light-warning">
                                                                 <div class="avatar-content">
                                                                     <i data-feather="watch" class="font-medium-3"></i>
                                                                 </div>
@@ -1178,7 +1129,7 @@
                                                     <td>$531.49</td>
                                                     <td>
                                                         <div class="d-flex align-items-center">
-                                                            <span class="font-weight-bolder mr-1">42%</span>
+                                                            <span class="mr-1 font-weight-bolder">42%</span>
                                                             <i data-feather="trending-up" class="text-success font-medium-1"></i>
                                                         </div>
                                                     </td>
@@ -1190,255 +1141,7 @@
                             </div>
                         </div>
                         <!--/ Company Table Card -->
-
-                        <!-- Developer Meetup Card -->
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="card card-developer-meetup">
-                                <div class="meetup-img-wrapper rounded-top text-center">
-                                    <img src="app-assets/images/illustration/email.svg" alt="Meeting Pic" height="170" />
-                                </div>
-                                <div class="card-body">
-                                    <div class="meetup-header d-flex align-items-center">
-                                        <div class="meetup-day">
-                                            <h6 class="mb-0">THU</h6>
-                                            <h3 class="mb-0">24</h3>
-                                        </div>
-                                        <div class="my-auto">
-                                            <h4 class="card-title mb-25">Developer Meetup</h4>
-                                            <p class="card-text mb-0">Meet world popular developers</p>
-                                        </div>
-                                    </div>
-                                    <div class="media">
-                                        <div class="avatar bg-light-primary rounded mr-1">
-                                            <div class="avatar-content">
-                                                <i data-feather="calendar" class="avatar-icon font-medium-3"></i>
-                                            </div>
-                                        </div>
-                                        <div class="media-body">
-                                            <h6 class="mb-0">Sat, May 25, 2020</h6>
-                                            <small>10:AM to 6:PM</small>
-                                        </div>
-                                    </div>
-                                    <div class="media mt-2">
-                                        <div class="avatar bg-light-primary rounded mr-1">
-                                            <div class="avatar-content">
-                                                <i data-feather="map-pin" class="avatar-icon font-medium-3"></i>
-                                            </div>
-                                        </div>
-                                        <div class="media-body">
-                                            <h6 class="mb-0">Central Park</h6>
-                                            <small>Manhattan, New york City</small>
-                                        </div>
-                                    </div>
-                                    <div class="avatar-group">
-                                        <div data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Billy Hopkins" class="avatar pull-up">
-                                            <img src="app-assets/images/portrait/small/avatar-s-9.jpg" alt="Avatar" width="33" height="33" />
-                                        </div>
-                                        <div data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Amy Carson" class="avatar pull-up">
-                                            <img src="app-assets/images/portrait/small/avatar-s-6.jpg" alt="Avatar" width="33" height="33" />
-                                        </div>
-                                        <div data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Brandon Miles" class="avatar pull-up">
-                                            <img src="app-assets/images/portrait/small/avatar-s-8.jpg" alt="Avatar" width="33" height="33" />
-                                        </div>
-                                        <div data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Daisy Weber" class="avatar pull-up">
-                                            <img src="app-assets/images/portrait/small/avatar-s-20.jpg" alt="Avatar" width="33" height="33" />
-                                        </div>
-                                        <div data-toggle="tooltip" data-popup="tooltip-custom" data-placement="bottom" data-original-title="Jenny Looper" class="avatar pull-up">
-                                            <img src="app-assets/images/portrait/small/avatar-s-20.jpg" alt="Avatar" width="33" height="33" />
-                                        </div>
-                                        <h6 class="align-self-center cursor-pointer ml-50 mb-0">+42</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ Developer Meetup Card -->
-
-                        <!-- Browser States Card -->
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="card card-browser-states">
-                                <div class="card-header">
-                                    <div>
-                                        <h4 class="card-title">Browser States</h4>
-                                        <p class="card-text font-small-2">Counter August 2020</p>
-                                    </div>
-                                    <div class="dropdown chart-dropdown">
-                                        <i data-feather="more-vertical" class="font-medium-3 cursor-pointer" data-toggle="dropdown"></i>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href="javascript:void(0);">Last 28 Days</a>
-                                            <a class="dropdown-item" href="javascript:void(0);">Last Month</a>
-                                            <a class="dropdown-item" href="javascript:void(0);">Last Year</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="browser-states">
-                                        <div class="media">
-                                            <img src="app-assets/images/icons/google-chrome.png" class="rounded mr-1" height="30" alt="Google Chrome" />
-                                            <h6 class="align-self-center mb-0">Google Chrome</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="font-weight-bold text-body-heading mr-1">54.4%</div>
-                                            <div id="browser-state-chart-primary"></div>
-                                        </div>
-                                    </div>
-                                    <div class="browser-states">
-                                        <div class="media">
-                                            <img src="app-assets/images/icons/mozila-firefox.png" class="rounded mr-1" height="30" alt="Mozila Firefox" />
-                                            <h6 class="align-self-center mb-0">Mozila Firefox</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="font-weight-bold text-body-heading mr-1">6.1%</div>
-                                            <div id="browser-state-chart-warning"></div>
-                                        </div>
-                                    </div>
-                                    <div class="browser-states">
-                                        <div class="media">
-                                            <img src="app-assets/images/icons/apple-safari.png" class="rounded mr-1" height="30" alt="Apple Safari" />
-                                            <h6 class="align-self-center mb-0">Apple Safari</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="font-weight-bold text-body-heading mr-1">14.6%</div>
-                                            <div id="browser-state-chart-secondary"></div>
-                                        </div>
-                                    </div>
-                                    <div class="browser-states">
-                                        <div class="media">
-                                            <img src="app-assets/images/icons/internet-explorer.png" class="rounded mr-1" height="30" alt="Internet Explorer" />
-                                            <h6 class="align-self-center mb-0">Internet Explorer</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="font-weight-bold text-body-heading mr-1">4.2%</div>
-                                            <div id="browser-state-chart-info"></div>
-                                        </div>
-                                    </div>
-                                    <div class="browser-states">
-                                        <div class="media">
-                                            <img src="app-assets/images/icons/opera.png" class="rounded mr-1" height="30" alt="Opera Mini" />
-                                            <h6 class="align-self-center mb-0">Opera Mini</h6>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="font-weight-bold text-body-heading mr-1">8.4%</div>
-                                            <div id="browser-state-chart-danger"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ Browser States Card -->
-
-                        <!-- Goal Overview Card -->
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="card">
-                                <div class="card-header d-flex justify-content-between align-items-center">
-                                    <h4 class="card-title">Goal Overview</h4>
-                                    <i data-feather="help-circle" class="font-medium-3 text-muted cursor-pointer"></i>
-                                </div>
-                                <div class="card-body p-0">
-                                    <div id="goal-overview-radial-bar-chart" class="my-2"></div>
-                                    <div class="row border-top text-center mx-0">
-                                        <div class="col-6 border-right py-1">
-                                            <p class="card-text text-muted mb-0">Completed</p>
-                                            <h3 class="font-weight-bolder mb-0">786,617</h3>
-                                        </div>
-                                        <div class="col-6 py-1">
-                                            <p class="card-text text-muted mb-0">In Progress</p>
-                                            <h3 class="font-weight-bolder mb-0">13,561</h3>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ Goal Overview Card -->
-
-                        <!-- Transaction Card -->
-                        <div class="col-lg-4 col-md-6 col-12">
-                            <div class="card card-transaction">
-                                <div class="card-header">
-                                    <h4 class="card-title">Transactions</h4>
-                                    <div class="dropdown chart-dropdown">
-                                        <i data-feather="more-vertical" class="font-medium-3 cursor-pointer" data-toggle="dropdown"></i>
-                                        <div class="dropdown-menu dropdown-menu-right">
-                                            <a class="dropdown-item" href="javascript:void(0);">Last 28 Days</a>
-                                            <a class="dropdown-item" href="javascript:void(0);">Last Month</a>
-                                            <a class="dropdown-item" href="javascript:void(0);">Last Year</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="transaction-item">
-                                        <div class="media">
-                                            <div class="avatar bg-light-primary rounded">
-                                                <div class="avatar-content">
-                                                    <i data-feather="pocket" class="avatar-icon font-medium-3"></i>
-                                                </div>
-                                            </div>
-                                            <div class="media-body">
-                                                <h6 class="transaction-title">Wallet</h6>
-                                                <small>Starbucks</small>
-                                            </div>
-                                        </div>
-                                        <div class="font-weight-bolder text-danger">- $74</div>
-                                    </div>
-                                    <div class="transaction-item">
-                                        <div class="media">
-                                            <div class="avatar bg-light-success rounded">
-                                                <div class="avatar-content">
-                                                    <i data-feather="check" class="avatar-icon font-medium-3"></i>
-                                                </div>
-                                            </div>
-                                            <div class="media-body">
-                                                <h6 class="transaction-title">Bank Transfer</h6>
-                                                <small>Add Money</small>
-                                            </div>
-                                        </div>
-                                        <div class="font-weight-bolder text-success">+ $480</div>
-                                    </div>
-                                    <div class="transaction-item">
-                                        <div class="media">
-                                            <div class="avatar bg-light-danger rounded">
-                                                <div class="avatar-content">
-                                                    <i data-feather="dollar-sign" class="avatar-icon font-medium-3"></i>
-                                                </div>
-                                            </div>
-                                            <div class="media-body">
-                                                <h6 class="transaction-title">Paypal</h6>
-                                                <small>Add Money</small>
-                                            </div>
-                                        </div>
-                                        <div class="font-weight-bolder text-success">+ $590</div>
-                                    </div>
-                                    <div class="transaction-item">
-                                        <div class="media">
-                                            <div class="avatar bg-light-warning rounded">
-                                                <div class="avatar-content">
-                                                    <i data-feather="credit-card" class="avatar-icon font-medium-3"></i>
-                                                </div>
-                                            </div>
-                                            <div class="media-body">
-                                                <h6 class="transaction-title">Mastercard</h6>
-                                                <small>Ordered Food</small>
-                                            </div>
-                                        </div>
-                                        <div class="font-weight-bolder text-danger">- $23</div>
-                                    </div>
-                                    <div class="transaction-item">
-                                        <div class="media">
-                                            <div class="avatar bg-light-info rounded">
-                                                <div class="avatar-content">
-                                                    <i data-feather="trending-up" class="avatar-icon font-medium-3"></i>
-                                                </div>
-                                            </div>
-                                            <div class="media-body">
-                                                <h6 class="transaction-title">Transfer</h6>
-                                                <small>Refund</small>
-                                            </div>
-                                        </div>
-                                        <div class="font-weight-bolder text-success">+ $98</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--/ Transaction Card -->
+ 
                     </div>
                 </section>
                 <!-- Dashboard Ecommerce ends -->
@@ -1466,13 +1169,15 @@
     <!-- BEGIN: Page Vendor JS-->
     <script src="app-assets/vendors/js/charts/apexcharts.min.js"></script>
     <script src="app-assets/vendors/js/extensions/toastr.min.js"></script>
+    <script src="app-assets/vendors/js/extensions/plyr.min.js"></script>
+    <script src="app-assets/vendors/js/extensions/plyr.polyfilled.min.js"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
     <script src="app-assets/js/core/app-menu.js"></script>
     <script src="app-assets/js/core/app.js"></script>
     <!-- END: Theme JS-->
-
+    <script src="app-assets/js/scripts/extensions/ext-component-media-player.js"></script>
     <!-- BEGIN: Page JS-->
     <script src="app-assets/js/scripts/pages/dashboard-ecommerce.js"></script>
     <!-- END: Page JS-->
